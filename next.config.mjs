@@ -1,14 +1,13 @@
 /** @type {import('next').NextConfig} */
+const isProd = process.env.NODE_ENV === "production";
+
 const nextConfig = {
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
-  typescript: {
-    ignoreBuildErrors: true,
-  },
+  output: "export", // required for GitHub Pages
   images: {
     unoptimized: true,
   },
-}
+  basePath: isProd ? "/portfolio_2025" : "",
+  assetPrefix: isProd ? "/portfolio_2025/" : "",
+};
 
-export default nextConfig
+export default nextConfig;
