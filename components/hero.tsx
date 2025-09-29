@@ -22,7 +22,9 @@ export function Hero() {
             <h1 className="text-5xl lg:text-7xl font-bold text-balance">
               <span className="gradient-text">Piyush Bist</span>
             </h1>
-            <h2 className="text-xl lg:text-2xl text-muted-foreground font-mono">Data Scientist & ML Engineer</h2>
+            <h2 className="text-xl lg:text-2xl text-muted-foreground font-mono">
+              Data Scientist & ML Engineer
+            </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
               I build intelligent, data-driven solutions that transform complex problems into actionable insights.
               Specializing in machine learning, deep learning, and cloud computing with a passion for innovation.
@@ -61,6 +63,7 @@ export function Hero() {
           </div>
         </div>
 
+        {/* Profile Image Section */}
         <div className="relative">
           <div className="w-80 h-80 mx-auto relative">
             <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-primary/40 rounded-full animate-float"></div>
@@ -71,6 +74,7 @@ export function Hero() {
                 width={280}
                 height={280}
                 className="rounded-full object-cover"
+                priority
               />
             </div>
           </div>
