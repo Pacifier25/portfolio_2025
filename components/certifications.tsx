@@ -10,7 +10,7 @@ const certifications = [
     issuer: "Amazon Web Services (AWS)",
     issued: "Feb 2025",
     expires: "Feb 2028",
-    id: "Early Adopter",
+    id: "3773d2bb-031e-4e54-939d-eebd8ec8ffff",
     category: "Machine Learning",
     color: "bg-orange-500",
     credentialUrl: "https://www.credly.com/badges/3773d2bb-031e-4e54-939d-eebd8ec8ffff/linked_in_profile",
@@ -20,21 +20,20 @@ const certifications = [
     issuer: "Amazon Web Services (AWS)",
     issued: "Jan 2025",
     expires: "Jan 2028",
-    id: "16068b7a62cf42a9ab3085225e493219",
+    id: "8f3a8d15-c035-4034-ad33-b3f249366df9",
     category: "Cloud Computing",
     color: "bg-orange-500",
-    credentialUrl: "https://www.credly.com/badges/f73f0449-07aa-4fdd-a748-3e91a281c441/linked_in_profile",
+    credentialUrl: "https://www.credly.com/badges/8f3a8d15-c035-4034-ad33-b3f249366df9/linked_in_profile",
   },
   {
     title: "Microsoft Certified: Azure Data Engineer Associate",
     issuer: "Microsoft",
-    issued: "Jan 2025",
-    expires: "Jan 2027",
-    id: "ad66cd5a81991b62",
+    issued: "Dec 2024",
+    expires: "Dec 2026",
+    id: "db620ab8c9cdf6d3",
     category: "Data Engineering",
     color: "bg-blue-500",
-    credentialUrl:
-      "https://learn.microsoft.com/en-us/users/piyushbist-9615/credentials/ad66cd5a81991b62?ref=https%3A%2F%2Fwww.linkedin.com%2F",
+    credentialUrl: "https://learn.microsoft.com/en-us/users/piyushbist-9615/credentials/db620ab8c9cdf6d3?ref=https%3A%2F%2Fwww.linkedin.com%2F",
   },
   {
     title: "Microsoft Certified: Fabric Analytics Engineer Associate",
@@ -44,29 +43,17 @@ const certifications = [
     id: "fec62e678ed3cb5b",
     category: "Analytics",
     color: "bg-blue-500",
-    credentialUrl:
-      "https://learn.microsoft.com/en-us/users/piyushbiststudent-9146/credentials/fec62e678ed3cb5b?ref=https%3A%2F%2Fwww.linkedin.com%2F",
+    credentialUrl: "https://learn.microsoft.com/en-us/users/piyushbiststudent-9146/credentials/fec62e678ed3cb5b?ref=https%3A%2F%2Fwww.linkedin.com%2F",
   },
   {
     title: "Microsoft Certified: Azure Data Scientist Associate",
     issuer: "Microsoft",
-    issued: "Dec 2024",
-    expires: "Dec 2026",
-    id: "db620ab8c9cdf6d3",
+    issued: "Jan 2025",
+    expires: "Jan 2027",
+    id: "ad66cd5a81991b62",
     category: "Data Science",
     color: "bg-blue-500",
-    credentialUrl:
-      "https://learn.microsoft.com/en-us/users/piyushbist-9615/credentials/db620ab8c9cdf6d3?ref=https%3A%2F%2Fwww.linkedin.com%2F",
-  },
-  {
-    title: "Microsoft Azure Fundamentals",
-    issuer: "Microsoft",
-    issued: "Nov 2024",
-    expires: "Nov 2026",
-    id: "8f3a8d15-c035-4034-ad33-b3f249366df9",
-    category: "Cloud Fundamentals",
-    color: "bg-blue-500",
-    credentialUrl: "https://www.credly.com/badges/8f3a8d15-c035-4034-ad33-b3f249366df9/linked_in_profile",
+    credentialUrl: "https://learn.microsoft.com/en-us/users/piyushbist-9615/credentials/ad66cd5a81991b62?ref=https%3A%2F%2Fwww.linkedin.com%2F",
   },
 ]
 
@@ -76,7 +63,7 @@ export function Certifications() {
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl font-bold text-center mb-16 gradient-text">Certifications</h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {certifications.map((cert, index) => (
             <Card
               key={index}
@@ -103,15 +90,8 @@ export function Certifications() {
                     <span className="text-foreground font-medium">{cert.expires}</span>
                   </div>
                   <div className="flex justify-between items-center">
-                    <span className="text-muted-foreground text-sm">ID:</span>
-                    <span className="text-foreground font-mono text-xs">{cert.id}</span>
-                  </div>
-                </div>
-
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-2">
-                    <Award className="w-4 h-4 text-muted-foreground" />
-                    <span className="text-sm text-muted-foreground">{cert.category}</span>
+                    <span className="text-muted-foreground text-sm">Category:</span>
+                    <span className="text-foreground font-medium">{cert.category}</span>
                   </div>
                 </div>
 
