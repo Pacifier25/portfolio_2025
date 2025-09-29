@@ -66,7 +66,7 @@ export function Hero() {
             <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-primary/40 rounded-full animate-float"></div>
             <div className="absolute inset-4 bg-card rounded-full flex items-center justify-center overflow-hidden">
               <Image
-                src="/portfolio_2025/public/images/profile-picture.png"
+                src="/images/profile-picture.png"
                 alt="Piyush Bist - Data Scientist"
                 width={280}
                 height={280}
